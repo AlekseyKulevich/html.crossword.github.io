@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles.css" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Baloo+Paaji+2&display=swap" rel="stylesheet">
+        <link href="" rel="stylesheet" id="changer">
+        <title>Создай свой кроссворд!</title>
+    </head>
+
+    <script>
+        function changeTheme() {
+            btn = document.getElementById("changer");
+            if (btn.getAttribute("href") === "")
+            {
+                btn.setAttribute("href", "darkmode.css");
+            }
+            else 
+            {
+                btn.setAttribute("href", "");
+            };
+       };
+    </script>
+
+    <body>       
+        <header>
+            <span class="header-container">
+                <span class="logo">
+                    <img src="img/logo.png" width="60px" height="60px" alt="">
+                </span>
+                    <input type="checkbox" id="menu-checkbox">
+                    <nav role="navigation">
+                        <label for="menu-checkbox" class="toggle-button"
+                        data-open="Меню" data-close="Закрыть" onclick></label>
+                        <ul class="main-menu">
+                            <li><label class="switch" id="BtnTheme"> 
+                                <input type="checkbox" onclick="changeTheme()">
+                                <span class="slider round"></span>
+                            </label></li>
+                            <li><a href="portfolio.html">Портфолио</a></li>
+                            <li><a href="constructor.html">Создать</a></li>
+                            <li><a href="autorization.html">Выйти</a></li>
+                        </ul>
+                    </nav>
+            </span>
+           </header>
+
+        <main>
+            <span class="content">
+                <span class="crossword">
+                    <span class="crossword-up">
+                        <div class="crossword-solver">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div>Т</div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+
+                            <div></div>
+                            <div></div>
+                            <div>Т</div>
+                            <div>Е</div>
+                            <div>С</div>
+                            <div>Т</div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div>С</div>
+                            <div></div>
+                            <div>Е</div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div>Т</div>
+                            <div></div>
+                            <div>С</div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div>Т</div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </span>
+                </span>
+                <section class="definition">
+                    <p class="my-question">Вопрос для данного поля:</p>
+                    <p class="text-question">Тестовый вопрос для тестового слова просто чтобы проверить это все</p>
+                </section>
+                <section class="save">
+                    <p>Введите id кроссворда, который необходимо загрузить для решения</p>
+                    <input type="text" placeholder="id">
+                    <button>Загрузить</button>
+                </section>
+            </span>
+        </main>
+        
+    </body>
+
+</html>

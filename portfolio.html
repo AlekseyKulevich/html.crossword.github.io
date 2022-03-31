@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles.css" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Baloo+Paaji+2&display=swap" rel="stylesheet">
+        <link href="" rel="stylesheet" id="changer">
+        <title>Создай свой кроссворд!</title>
+    </head>
+
+    <script>
+        function changeTheme() {
+            btn = document.getElementById("changer");
+            if (btn.getAttribute("href") === "")
+            {
+                btn.setAttribute("href", "darkmode.css");
+            }
+            else 
+            {
+                btn.setAttribute("href", "");
+            };
+       };
+    </script>
+
+    <body>       
+        <header>
+            <span class="header-container">
+                <span class="logo">
+                    <img src="img/logo.png" width="60px" height="60px" alt="">
+                </span>
+                    <input type="checkbox" id="menu-checkbox">
+                    <nav role="navigation">
+                        <label for="menu-checkbox" class="toggle-button"
+                        data-open="Меню" data-close="Закрыть" onclick></label>
+                        <ul class="main-menu">
+                            <li><label class="switch" id="BtnTheme"> 
+                                <input type="checkbox" onclick="changeTheme()">
+                                <span class="slider round"></span>
+                            </label></li>
+                            <li><a href="solver.html">Решить</a></li>
+                            <li><a href="constructor.html">Создать</a></li>
+                            <li><a href="autorization.html">Выйти</a></li>
+                        </ul>
+                    </nav>
+            </span>
+        </header>
+
+        <main>
+            <span class="crossword-list">
+                <span class="crossword-item">
+                    <span class="item-title">
+                        <h3>Тест1</h3>
+                        <a>
+                            <img src="img/watch-crossword.png">
+                        </a>
+                    </span>
+                    <p class="views">Просмотров</p>
+                    <p class="amount-views">45</p>
+                    <p class="procent">Процент выполнения</p>
+                    <p class="amount-procent">53</p>
+                </span>
+                <span class="crossword-item">
+                    <span class="item-title">
+                        <h3>Тест1</h3>
+                        <a>
+                            <img src="img/watch-crossword.png">
+                        </a>
+                    </span>
+                    <p class="views">Просмотров</p>
+                    <p class="amount-views">45</p>
+                    <p class="procent">Процент выполнения</p>
+                    <p class="amount-procent">53</p>
+                </span>
+                <span class="crossword-item">
+                    <span class="item-title">
+                        <h3>Тест1</h3>
+                        <a>
+                            <img src="img/watch-crossword.png">
+                        </a>
+                    </span>
+                    <p class="views">Просмотров</p>
+                    <p class="amount-views">45</p>
+                    <p class="procent">Процент выполнения</p>
+                    <p class="amount-procent">53</p>
+                </span>
+                <span class="crossword-item">
+                    <span class="item-title">
+                        <h3>Тест1</h3>
+                        <a>
+                            <img src="img/watch-crossword.png">
+                        </a>
+                    </span>
+                    <p class="views">Просмотров</p>
+                    <p class="amount-views">45</p>
+                    <p class="procent">Процент выполнения</p>
+                    <p class="amount-procent">53</p>
+                </span>
+                <span class="crossword-item">
+                    <span class="item-title">
+                        <h3>Тест1</h3>
+                        <a>
+                            <img src="img/watch-crossword.png">
+                        </a>
+                    </span>
+                    <p class="views">Просмотров</p>
+                    <p class="amount-views">45</p>
+                    <p class="procent">Процент выполнения</p>
+                    <p class="amount-procent">53</p>
+                </span>
+                <span class="crossword-item">
+                    <span class="item-title">
+                        <h3>Тест1</h3>
+                        <a>
+                            <img src="img/watch-crossword.png">
+                        </a>
+                    </span>
+                    <p class="views">Просмотров</p>
+                    <p class="amount-views">45</p>
+                    <p class="procent">Процент выполнения</p>
+                    <p class="amount-procent">53</p>
+                </span>
+                <span class="crossword-item">
+                    <span class="item-title">
+                        <h3>Тест1</h3>
+                        <a>
+                            <img src="img/watch-crossword.png">
+                        </a>
+                    </span>
+                    <p class="views">Просмотров</p>
+                    <p class="amount-views">45</p>
+                    <p class="procent">Процент выполнения</p>
+                    <p class="amount-procent">53</p>
+                </span>
+                <span class="crossword-item">
+                    <span class="item-title">
+                        <h3>Тест1</h3>
+                        <a>
+                            <img src="img/watch-crossword.png">
+                        </a>
+                    </span>
+                    <p class="views">Просмотров</p>
+                    <p class="amount-views">45</p>
+                    <p class="procent">Процент выполнения</p>
+                    <p class="amount-procent">53</p>
+                </span>
+            </span>
+        </main>
+
+    </body>
+
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles.css" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Baloo+Paaji+2&display=swap" rel="stylesheet">
+        <link href="" rel="stylesheet" id="changer">
+        <title>Создай свой кроссворд!</title>
+    </head>
+
+    <script>
+        function changeTheme() {
+            btn = document.getElementById("changer");
+            if (btn.getAttribute("href") === "")
+            {
+                btn.setAttribute("href", "darkmode.css");
+            }
+            else 
+            {
+                btn.setAttribute("href", "");
+            };
+       };
+    </script>
+
+    <body>       
+        <header>
+            <span class="header-container">
+                <span class="logo">
+                    <img src="img/logo.png" width="60px" height="60px" alt="">
+                </span>
+                    <input type="checkbox" id="menu-checkbox">
+                    <nav role="navigation">
+                        <label for="menu-checkbox" class="toggle-button"
+                        data-open="Меню" data-close="Закрыть" onclick></label>
+                        <ul class="main-menu">
+                            <li><label class="switch" id="BtnTheme"> 
+                                <input type="checkbox" onclick="changeTheme()">
+                                <span class="slider round"></span>
+                            </label></li>
+                            <li><a href="portfolio.html">Портфолио</a></li>
+                            <li><a href="solver.html">Решить</a></li>
+                            <li><a href="autorization.html">Выйти</a></li>
+                        </ul>
+                    </nav>
+                </span>
+           </header>
+
+        <main>
+            <span class="content">
+                <span class="crossword">
+                    <span class="crossword-up">
+                        <div class="crossword-table">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div>Т</div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+
+                            <div></div>
+                            <div></div>
+                            <div>Т</div>
+                            <div>Е</div>
+                            <div>С</div>
+                            <div>Т</div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div>С</div>
+                            <div></div>
+                            <div>Е</div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div>Т</div>
+                            <div></div>
+                            <div>С</div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div>Т</div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <span class="button-row">
+                            <button class="up"></button>
+                            <button class="down"></button>
+                        </span>
+                    </span>
+                    <span class="button-column">
+                        <button class="left"></button>
+                        <button class="right"></button>
+                    </span>
+                </span>
+                <!--<span class="instructions">
+                    <p class="instructuction"><b>Как составить кроссворд?</b><br>
+                        <i>Шаг 1.</i> Укажите регион для добавления нового слова.<br>
+                        <i>Шаг 2.</i> На правой панели введите своё слово.<br>
+                        <i>Шаг 3.</i> Придумайте и запишите определение для слова.<br>
+                        ...<br>
+                        <i>Шаг 4.</i> Сохраните кроссворд.<br>
+                        <i>Шаг 5.</i> Получите ссылку, по которой ваши друзья смогут открыть этот кроссворд для разгадывания.<br>
+                        <i>Шаг 6.</i> Следите за статистикой.</p>
+                </span>-->
+                <section class="definition">
+                    <p class="my-word">Ваше слово:</p>
+                    <div class="word">
+                        <div>Т</div>
+                        <div>Е</div>
+                        <div>С</div>
+                        <div>Т</div>
+                    </div>
+                    <p class="my-question">Ваш вопрос:</p>
+                    <textarea class="question"></textarea>
+                    <span class="buttons-word">
+                        <button class="save-word">Сохранить</button>
+                        <button class="delete-word">Удалить</button>
+                    </span>
+                </section>
+                <section class="save">
+                    <p>Введите id под которым будет сохранен ваш кроссворд</p>
+                    <input type="text" placeholder="id">
+                    <button>Сохранить</button>
+                </section>
+            </span>
+        </main>
+        
+    </body>
+
+</html>
